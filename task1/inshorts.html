@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+    h1{
+       text-align :center ;
+    }
+</style>
+</head>
+<body>
+
+<h1 >My Feed</h1>
+<div id = "page">
+<div id="page1">
+<img src="images2.jpg" alt="dfcfew">
+<h2>Page 1.</h2>
+<p>dhd duydgyugd dguede weguy uhdhuedew. dhudud dwduywdywdd dudhuwdhhdd ddhhduyhdud dduhduhdud huhuhiuewheheeh.ehduwhudhwd udeudheh euu ewyegyu eyue.debdeuchduhu uhuydyudyegd edeuwdyegygeyd dhieuhuehude duehiduhied ewdeuduehde dedhu.dhewuue eue euewhueh ehuueew weuhieu ewewuewif ewehu ewbeb ehefhu.</p>
+</div>
+<div id="page2" style="display:none;">
+    <img src="images2.jpg" alt="dfcfew">
+    <h2>Page 2</h2>
+    <p>dhd duydgyugd dguede weguysqsqqqsqsqsqsqsqsqsq.dygduywud dduydyydd ededegdgewydew egegdyegyuee eueuye eewuue eweewgey.gyeg eguewgu eeg ewugyeew fewuew fewubew.dewe efeuheue fuefhewue euhweuudhewhuhyuegy.</p>
+</div>
+
+</body>
+</html>
+<script>
+      $("#page1").on("swipeleft",function(){
+        $('#page1').css("display","none");
+        $('#page2').css("display","block");
+      });
+      $("#page2").on("swiperight",function(){
+        $('#page2').css("display","none");
+        $('#page1').css("display","block");
+      });                       
+    
+    </script>
